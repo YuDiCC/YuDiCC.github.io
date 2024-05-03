@@ -1,0 +1,38 @@
+{
+  "skills": [
+    {
+      "imagen": "assets/images/Skills/file-type-html.svg",
+      "nombre": "HTML5"
+    },
+    {
+      "imagen": "assets/images/Skills/file-type-css.svg",
+      "nombre": "CSS3"
+    },
+    {
+      "imagen": "assets/images/Skills/file-type-js-official.svg",
+      "nombre": "JavaScript"
+    },
+    {
+      "imagen": "assets/images/Skills/mysql-original-wordmark.svg",
+      "nombre": "MySQL"
+    }
+  ],
+  "tools": [
+    {
+      "imagen": "assets/images/Tools/bootstrap.svg",
+      "nombre": "Bootstrap"
+    },
+    {
+      "imagen": "assets/images/Tools/git.svg",
+      "nombre": "Git"
+    },
+    {
+      "imagen": "assets/images/Tools/figma.svg",
+      "nombre": "Figma"
+    },
+    {
+      "imagen": "assets/images/Tools/xampp.svg",
+      "nombre": "XAMPP"
+    }
+  ]
+}

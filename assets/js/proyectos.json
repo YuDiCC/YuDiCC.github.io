@@ -1,0 +1,15 @@
+[
+    {
+      "imagen": "assets/images/Proyects/Encriptador.webp",
+      "titulo": "Encriptador de Texto",
+      "repositorio": "https://github.com/YuDiCC/ChallengeOne_Encriptador_de_Texto",
+      "link": "https://yudicc.github.io/ChallengeOne_Encriptador_de_Texto/"
+    },
+    {
+      "imagen": "assets/images/Proyects/clonacion_google.webp",
+      "titulo": "Clonacion Interfaz de Google",
+      "repositorio": "https://github.com/YuDiCC/Clon_Interfaz_de_Google",
+      "link": "https://yudicc.github.io/Clon_Interfaz_de_Google/"
+    }
+  ]
+  

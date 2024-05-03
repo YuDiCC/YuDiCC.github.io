@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yudi Calan Chan | Portafolio</title>
+    <link rel="website icon" type="png" href="assets/images/Resources/AyA4.webp">
+    <meta name="description" content="¡Bienvenido(a) a mi portafolio web! Soy una apasionada desarrolladora Front-End dedicada a crear experiencias web excepcionales. Explora mis proyectos y habilidades, y no dudes en contactarme para conversar sobre cómo puedo contribuir al éxito de tus proyectos en línea.">
+    <meta name="keywords" content="portafolio web, desarrolladora front-end, frontend, ingeniería Informática, yudicc">
+    <meta name="author" content="Yudi Calan Chan">
+
+    <!-- Styles-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Montserrat+Alternates&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <!-- Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <nav>
+            <ul id="ul">
+                <img src="assets/images/Resources/AyA4.webp" alt="logo" class="logo-aya">
+                <li class="menu-options" id="about-mi"><a href="#">Sobre mí</a></li>
+                <li class="menu-options" id="skills-and-tools"><a href="#section-skills">Habilidades</a></li>
+                <li class="menu-options" id="formation"><a href="#section-formation">Formación</a></li>
+                <li class="menu-options" id="proyect"><a href="#section-proyects">Proyectos</a></li>
+                <li class="menu-options" id="contact"><a href="#section-contact">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div id="hamMenu" class="ham" onclick="hamMenuClick()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="presentation">
+            <img class="image avatar" id="profile" src="assets/images/Resources/perfil.webp" alt="Foto de Yudi" width="20px" />
+            <div class="container-description">
+                <h1>Hola, soy Yudi Calan Chan, dedicada a la construcción de páginas web</h1>
+                <p class="description">Desarrolladora FrontEnd en Formación</p>
+                <div class="btn-main">
+                    <a href="mailto:7243@itescam.edu.mx" target="_blank" aria-label="Enviar Correo Electrónico"><i class="bi bi-envelope"></i>Correo</a>
+                    <a class="btn-cv" id="cv" href="assets/cv/CV_Yudi Calan.pdf" target="_blank" aria-label="Currículo"><i
+                            class="bi bi-box-arrow-up-right"></i>Currículo</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Section about -->
+    <section class="information" id="section-about">
+        <div class="container-about">
+            <h2 class="section-title">Sobre mí</h2>
+            <p class="section-text">
+                Soy estudiante en la carrera de Ingenieria Informática, con un enfoque en el Desarrollo FrontEnd.
+                Además, también tengo conocimientos en otras áreas de la ingeniería, lo que me permite tener una
+                visión más amplia y un enfoque multidisciplinario en mis proyectos.
+            </p>
+
+            <p class="section-text">
+                Mi devoción por el desarrollo de interfaces web se refleja en mi experiencia en la creación de
+                páginas atractivas y funcionales. Me encanta trabajar en equipo y enfrentar nuevos desafíos para
+                mejorar constantemente mis habilidades.
+            </p>
+
+            <div class="img-about">
+                <img src="assets/images/Resources/web.webp" loading="lazy" alt="avatar" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Skills -->
+    <section class="information" id="section-skills">
+        <h2 class="section-title">Habilidades</h2>
+        <div class="container-skills"></div>
+        <br>
+        <h2 class="section-title">Herramientas</h2>
+        <div class="container-tools"></div>
+    </section>
+
+    <!-- Section Formation -->
+    <section class="information" id="section-formation">
+        <h2 class="section-title">Formación</h2>
+
+        <div class="container-formation">
+            <div class="formation">
+                <h3>Ingenieria Informática</h3>
+                <div class="formation-img"><img src="assets/images/Formation/itescam.webp" alt="ITESCAM"></div>
+                <ul>
+                    <li>2020-Presente</li>
+                </ul>
+                <p class="p-formation">Instituto Tecnológico Superior de Calkiní en el Estado de Campeche</p>
+            </div>
+
+            <div class="formation">
+                <h3>Especialización Front-End</h3>
+                <div class="formation-img"><img src="assets/images/Formation/one.webp" alt="Oracle Next Education"></div>
+                <ul>
+                    <li>2024-Presente</li>
+                </ul>
+                <p class="p-formation">Programa Oracle Next Education con Alura Latam</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Proyects -->
+    <section class="information" id="section-proyects">
+        <h2 class="section-title">Proyectos</h2>
+        <div class="container-proyects" id="proyects-container"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <section id="section-contact">
+
+            <div class="phrase">
+                <p>~ Cada línea de código es un paso adelante hacia el futuro digital que estás creando ~</p>
+            </div>
+            <p>¡Envíame un mail!</p>
+
+            <button class="mail" aria-label="Enviar Correo Electrónico">
+                <a href="mailto:7243@itescam.edu.mx" target="_blank" class="footer-link"><i
+                        class="bi bi-envelope-at" aria-label="Correo"></i></a>
+            </button>
+
+            <p>Yudi Calan Chan (2024) &#169;</p>
+
+            <div class="social-networks">
+                <a href="https://github.com/YuDiCC" target="_blank" class="footer-link" aria-label="Github"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/yudi-aleyda-calan-chan-a40154277/" target="_blank"
+                    class="footer-link" aria-label="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/ale_calan04/" target="_blank" class="footer-link" aria-label="Instagram"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="https://twitter.com/YuDiCC_04" target="_blank" class="footer-link" aria-label="Twitter"><i
+                        class="bi bi-twitter"></i></a>
+            </div>
+        </section>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

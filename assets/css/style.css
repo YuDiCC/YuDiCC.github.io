@@ -1,0 +1,456 @@
+:root {
+    --light-color: #F4F3F3;
+    --dark-color: #101828;
+    --purple-color: #7F2982;
+    --rose-golden-color: #CC7178;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.3s;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    outline: none;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    cursor: url("../../assets/images/Resources/cursor.svg"), auto;
+}
+
+
+h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+}
+
+main {
+    background-image: url("../images/Resources/fondo.webp");
+    padding: 90px 20px;
+}
+
+section {
+    padding: 100px;
+}
+
+ul#ul {
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+.logo-aya{
+    width: 100px;
+}
+
+/* Main */
+
+img#profile {
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid var(--purple-color);
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin: 60px;
+}
+
+.container-description>* {
+    margin: 30px;
+    text-align: center;
+}
+
+.container-description h1 {
+    font-size: 40px;
+}
+
+.container-description p {
+    font-size: 35px;
+    font-family: "Dancing Script", cursive;
+}
+
+.btn-main a {
+    margin: 5px;
+    padding: 10px;
+    background-color: var(--purple-color);
+    color: var(--light-color);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.btn-main a i {
+    margin: 5px;
+}
+
+/* SOBRE MI */
+
+#section-about {
+    background-image: linear-gradient(rgba(127, 41, 130, 0.5), rgba(0, 0, 0, 1)), url('../images/Resources/Polygon.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--light-color);
+}
+
+.container-about p {
+    margin: 30px;
+}
+
+.img-about {
+    display: flex;
+    justify-content: center;
+}
+
+.img-about img {
+    height: 200px;
+}
+
+/* SKILLS AND TOOLS */
+#section-skills {
+    background-color: var(--light-color);
+}
+
+.container-skills,
+.container-tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+div.badge {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    border-radius: 24px;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffff;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.badge:hover {
+    box-shadow: -6px -6px 12px #c5c5c5, 6px 6px 12px #fff;
+}
+
+
+div.badge img {
+    width: 80px;
+}
+
+/* FORMACION*/
+.container-formation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formation {
+    width: 700px;
+    padding: 20px;
+    margin: 20px;
+    color: var(--purple-color);
+    transition: all 0.1s ease;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.8);
+}
+
+.formation ul {
+    list-style: none;
+}
+
+.formation ul li {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.formation-img {
+    text-align: center;
+}
+
+.formation-img img {
+    height: 80px;
+    margin: 12px;
+}
+
+/* PROYECTOS */
+.container-proyects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proyect {
+    text-align: center;
+    width: 250px;
+    padding: 30px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 0.125rem #121212;
+    box-shadow: 0.25rem 0.25rem #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyect:hover {
+    transform: translate(0.125rem, 0.125rem);
+    box-shadow: 0.125rem 0.125rem #121212;
+}
+
+.proyect h3 {
+    margin: 15px;
+}
+
+.img-proyect {
+    width: auto;
+    height: 125px;
+}
+
+.btn-proyect {
+    font-size: 14px;
+    margin: 10px;
+    padding: 5px;
+    background: var(--purple-color);
+    border-radius: 10px;
+    transition: all 0.3s;
+    box-shadow: 4px 4px 8px #c5c5c5, -4px -4px 8px #ffff;
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+.btn-proyect:hover {
+    box-shadow: -4px -4px 8px #c5c5c5, 4px 4px 8px #fff;
+}
+
+.phrase {
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    font-size: 14px;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-align: center;
+}
+
+#section-contact {
+    padding: 20px;
+}
+
+button.mail {
+    background-color: var(--purple-color);
+    border-radius: 10em;
+    padding: 0.5em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--light-color);
+    margin: 20px;
+}
+
+.social-networks {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link>i {
+    color: var(--light-color);
+    font-size: 30px;
+    margin: 0 10px 0 10px;
+}
+
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+
+    ul#ul {
+        background-color: var(--dark-color);
+        -webkit-box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.75);
+        box-shadow: 0px 10px 6px -8px rgba(0,0,0,0.75);
+        position: fixed;
+        width: 100%;
+        padding: 10px;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #ul li a {
+        color: var(--light-color);
+    }
+
+    .img-about img {
+        height: 250px;
+    }
+
+    div.badge {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    div.badge img {
+        width: 90px;
+    }
+
+    .phrase {
+        font-size: 16px;
+    }
+}
+
+/* Moviles y tabletas */
+@media screen and (max-width: 1023px) {
+
+    /* Navbar*/
+    .ham {
+        width: 45px;
+        height: 45px;
+        background: var(--dark-color);
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+
+    .line1,
+    .line2,
+    .line3 {
+        background: var(--light-color);
+        border-radius: 3px;
+        width: 25px;
+        height: 3px;
+        margin: 2px;
+    }
+
+    .active .line1 {
+        transform: rotate(-45deg) translate(-5px, 5px);
+
+    }
+
+    .active .line2 {
+        opacity: 0;
+    }
+
+    .active .line3 {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+
+    .link {
+        left: 0%;
+    }
+
+
+    nav ul {
+        background: var(--dark-color);
+        left: -100%;
+        position: fixed;
+        height: 100vh;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-aya{
+        margin: 30px;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    nav li a {
+        color: var(--light-color);
+        text-decoration: none;
+    }
+
+    nav ul li:hover {
+        background: var(--purple-color);
+        padding-left: 7%;
+        width: 93%;
+    }
+
+    .presentation {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    main,
+    section {
+        padding: 50px 10px;
+    }
+
+    img#profile {
+        width: 250px;
+    }
+
+    .container-description>* {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .container-description h1 {
+        font-size: 22px;
+    }
+
+    .container-description p {
+        font-size: 24px;
+    }
+
+
+    .formation {
+        width: 250px;
+    }
+
+    .formation h3 {
+        font-size: 16px;
+    }
+
+    .formation ul li {
+        font-size: 14px;
+    }
+
+    .formation p {
+        font-size: 14px;
+    }
+}
+
+/*Tabletas*/
+@media screen and (min-width: 768px) and (max-width:1023px) {
+
+    .formation {
+        width: 500px;
+    }
+}
