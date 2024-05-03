@@ -8,7 +8,7 @@ fetch('assets/js/skills.json')
     data.skills.forEach(skill => {
       const skillHTML = `
       <div class="badge">
-        <img src="${skill.imagen}" loading="lazy" alt="${skill.nombre}">
+        <img src="${skill.imagen}" alt="${skill.nombre}">
         <p class="name-skill">${skill.nombre}</p>
       </div>
     `;
@@ -18,7 +18,7 @@ fetch('assets/js/skills.json')
     data.tools.forEach(tool => {
       const toolHTML = `
       <div class="badge">
-        <img src="${tool.imagen}" loading="lazy" alt="${tool.nombre}">
+        <img src="${tool.imagen}" alt="${tool.nombre}">
         <p class="name-tools">${tool.nombre}</p>
       </div>
     `;
@@ -37,7 +37,7 @@ fetch('assets/js/proyectos.json')
     data.forEach(proyecto => {
       const proyectoHTML = `
       <div class="proyect">
-        <img src="${proyecto.imagen}" alt="${proyecto.titulo}" loading="lazy" class="img-proyect">
+        <img src="${proyecto.imagen}" alt="${proyecto.titulo}" class="img-proyect">
         <h3>${proyecto.titulo}</h3>
         <div class="btn-proyects">
           <a href="${proyecto.repositorio}" target="_blank" class="btn-proyect" aria-label="Repositorio del Proyecto"><i class="bi bi-github"></i> Repositorio</a>
